@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	{% if user.is_authenticated %}
+		<h1>Seja bem vindo, {{ user.username }}</h1>
+	{% else %}
+		<h1>Faça o Login para poder acessar essa página!</h1>
+	{% endif %}
+</body>
+</html>
